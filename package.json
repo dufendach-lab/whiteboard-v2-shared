@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
+  "files": ["lib/**/*"],
   "dependencies": {
     "@types/fhir": "^0.0.37"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
