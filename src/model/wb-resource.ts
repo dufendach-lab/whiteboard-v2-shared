@@ -1,4 +1,6 @@
+export type WbResourceType = 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbList' | 'WbProcedure' | 'WbFlag'
+
 export interface WbResource {
-  wbResourceType: 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbList' | 'WbProcedure' | 'WbFlag',
+  wbResourceType: WbResourceType,
   id: string
 }
