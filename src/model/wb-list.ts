@@ -1,7 +1,7 @@
-// import {WbResource} from "./wb-resource";
-//
-// export interface List extends WbResource {
-//   "resourceType" : "List",
+import {WbResource} from "./wb-resource";
+
+export interface WbList extends WbResource {
+  "resourceType" : "WbList",
 //   // from Resource: id, meta, implicitRules, and language
 //   // from DomainResource: text, contained, extension, and modifierExtension
 //   "identifier" : [{ Identifier }], // Business identifier
@@ -22,4 +22,4 @@
 //   "item" : { Reference(Any) } // R!  Actual entry
 // }],
 //   "emptyReason" : { CodeableConcept } // C? Why list is empty
-// }
+}
