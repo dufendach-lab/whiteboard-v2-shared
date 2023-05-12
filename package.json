@@ -1,6 +1,6 @@
 {
   "name": "wb-shared-models",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "dependencies": {
     "@types/fhir": "^0.0.37"
   },
