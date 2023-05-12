@@ -2,5 +2,6 @@ export type WbResourceType = 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbLis
 
 export interface WbResource {
   wbResourceType: WbResourceType,
-  id: string
+  id: string,
+  identifier?: string
 }
