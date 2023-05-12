@@ -8,7 +8,7 @@ export interface WbEncounter extends WbResource {
   diagnosis?: EncounterDiagnosis;
   hospitalization: EncounterHospitalization;
   subjectReference: Reference;
-  currentLocation: EncounterLocation | null;
-  futureLocation: EncounterLocation | null;
-  isPendingDischarge: boolean;
+  currentLocation?: EncounterLocation;
+  futureLocation?: EncounterLocation;
+  isPendingDischarge?: boolean;
 }
