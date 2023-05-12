@@ -1,3 +1,5 @@
+$ErrorActionPreference = "Stop"
+
 npx tsc
 cd ../frontend
 yarn upgrade wb-shared-models
