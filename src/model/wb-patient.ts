@@ -12,14 +12,14 @@ export interface WbPatient extends WbResource {
 
 export interface WbProcedure extends WbResource {
   wbResourceType: "WbProcedure",
-  identifier?: string,
+  identifier?: Identifier[],
   coding: Coding[],
   status: ("unknown" | "in-progress" | "inactive" | "active" | "preparation" | "not-done" | "on-hold" | "stopped" | "completed" | "entered-in-error") | undefined
 }
 
 export interface WbFlag extends WbResource{
   wbResourceType: "WbFlag",
-  identifier?: string,
+  identifier?: Identifier[],
   coding: Coding[],
   status: ("entered-in-error" | "active" | "inactive") | undefined
 }
