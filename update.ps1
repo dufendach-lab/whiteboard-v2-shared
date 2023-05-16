@@ -1,6 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 npm version patch
+git push
 
 npx tsc
 cd ../frontend
