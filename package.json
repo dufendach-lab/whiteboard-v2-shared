@@ -1,13 +1,13 @@
 {
-  "name": "wb-shared-models",
+  "name": "@kevindufendach/wb-shared-models",
   "version": "1.0.8",
-  "description": "",
+  "description": "Shared models for the Whiteboard Application",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc"
   },
-  "author": "",
+  "author": "Kevin Dufendach",
   "license": "ISC",
   "files": [
     "lib/**/*"
@@ -17,5 +17,17 @@
   },
   "devDependencies": {
     "typescript": "^5.0.4"
-  }
+  },
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dufendach-lab/whiteboard-v2-shared.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dufendach-lab/whiteboard-v2-shared/issues"
+  },
+  "homepage": "https://github.com/dufendach-lab/whiteboard-v2-shared#readme"
 }
