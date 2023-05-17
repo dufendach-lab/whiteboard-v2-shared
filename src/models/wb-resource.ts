@@ -9,6 +9,6 @@ export interface WbResource {
   /**
    * Version should increment with each change of the resource
    */
-  version: number,
+  version: string,
   identifier?: Identifier | string
 }
