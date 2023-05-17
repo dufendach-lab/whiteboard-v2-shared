@@ -5,5 +5,10 @@ export type WbResourceType = 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbLis
 export interface WbResource {
   wbResourceType: WbResourceType,
   id: string,
+
+  /**
+   * Version should increment with each change of the resource
+   */
+  version: number,
   identifier?: Identifier | string
 }
