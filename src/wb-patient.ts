@@ -7,7 +7,7 @@ export interface WbPatient extends WbResource {
   gender?: ('male' | 'female' | 'other' | 'unknown'),
   birthDate?: string,
   activeFlags: WbFlag[],
-  activeProcedures: WbProcedure[],
+  activeProcedures: WbProcedure[]
 }
 
 export interface WbProcedure extends WbResource {
