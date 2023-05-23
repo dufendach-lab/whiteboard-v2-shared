@@ -1,4 +1,4 @@
-import {CareTeam, EncounterDiagnosis, EncounterHospitalization, EncounterLocation, Reference} from "fhir/r4";
+import {CareTeam, EncounterDiagnosis, EncounterHospitalization, Reference} from "fhir/r4";
 import {WbResource} from "./wb-resource";
 
 export interface WbEncounter extends WbResource {
