@@ -1,4 +1,4 @@
-import {CareTeam, EncounterDiagnosis, EncounterHospitalization, Reference} from "fhir/r4";
+import {EncounterDiagnosis, EncounterHospitalization, Reference} from "fhir/r4";
 import {WbResource} from "./wb-resource";
 
 export interface WbEncounter extends WbResource {
@@ -13,5 +13,5 @@ export interface WbEncounter extends WbResource {
   isPendingDischarge?: boolean;
 
   // Compiled data
-  careTeam?: CareTeam;
+  careTeam?: Reference;
 }
