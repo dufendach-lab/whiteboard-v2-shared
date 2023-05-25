@@ -1,6 +1,5 @@
-import {Identifier} from "fhir/r4";
-
-export type WbResourceType = 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbList' | 'WbProcedure' | 'WbFlag' | 'WbOrganization'
+export type WbResourceType = 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbList' | 'WbProcedure' | 'WbFlag'
+  | 'WbOrganization' | 'WbCareTeam' | 'WbPractitioner' | 'WbAppointment'
 
 export interface WbResource {
   wbResourceType: WbResourceType,
@@ -10,5 +9,5 @@ export interface WbResource {
    * Version should increment with each change of the resource
    */
   version: string,
-  identifier?: Identifier | string
+  identifier?: string
 }

@@ -4,4 +4,10 @@ export * from "./wb-list";
 export * from "./wb-location";
 export * from "./wb-patient";
 export * from "./wb-resource";
-export * from "./constants/constants"
+export * from "./wb-organization";
+export * from "./wb-care-team";
+export * from "./wb-practitioner";
+export * from "./wb-flag";
+export * from "./wb-procedure";
+
+export * from "./constants/constants";

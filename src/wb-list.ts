@@ -1,5 +1,5 @@
 import {WbResource} from "./wb-resource";
-import {CodeableConcept} from "fhir/r4";
+import {CodeableConcept, Extension} from "fhir/r4";
 
 export interface WbList extends WbResource {
   wbResourceType : "WbList",
@@ -9,6 +9,7 @@ export interface WbList extends WbResource {
     flag : CodeableConcept, // Status/Workflow information about this item
     date : string, // When item added to list
     item : string // R!  Actual entry
-    deleted? : boolean, // C? If this item is actually marked as deleted
+    deleted? : boolean, // C? If this item is actually marked as deleted,
+    extension?: Extension[]
   }[],
 }
