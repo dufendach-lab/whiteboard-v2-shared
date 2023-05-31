@@ -6,10 +6,10 @@ export interface WbEncounter extends WbResource {
   status: 'planned'|'arrived'|'triaged'|'in-progress'|'onleave'|'finished'|'cancelled'|'entered-in-error'|'unknown';
   diagnosis?: EncounterDiagnosis;
   hospitalization: EncounterHospitalization;
+  // isPendingDischarge?: boolean;
   subjectReference: string;
   currentLocation?: string;
   futureLocation?: string;
-  isPendingDischarge?: boolean;
 
   // Compiled data
   careTeam?: string;
