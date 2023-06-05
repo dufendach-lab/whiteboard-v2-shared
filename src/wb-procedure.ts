@@ -4,6 +4,7 @@ import {Coding} from "fhir/r4";
 export interface WbProcedure extends WbResource {
   wbResourceType: "WbProcedure",
   coding: Coding[],
-  status: "unknown" | "in-progress" | "inactive" | "active" | "preparation" | "not-done" | "on-hold" | "stopped" | "completed" | "entered-in-error"
+  status: "unknown" | "in-progress" | "preparation" | "not-done" | "on-hold" | "stopped" | "completed" | "entered-in-error",
+  subject: string
 }
 
