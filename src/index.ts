@@ -11,4 +11,4 @@ export * from "./wb-flag";
 export * from "./wb-procedure";
 
 export * from "./constants/constants";
-export * from "./util/index"
+export * from "./date-utils";
