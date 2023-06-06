@@ -2,7 +2,7 @@ import {WbResource} from "./wb-resource";
 import {CodeableConcept, Period} from "fhir/r4";
 
 export interface WbCareTeam extends WbResource {
-  WbResourceType: "WbCareTeam",
+  wbResourceType: "WbCareTeam",
   identifier: string, // Mandatory // External Ids for this item
   // "status" : "<code>", // proposed | active | suspended | inactive | entered-in-error
   // "category" : [{ CodeableConcept }], // Type of team

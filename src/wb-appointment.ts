@@ -1,7 +1,7 @@
 import {WbResource} from "./wb-resource";
 
 export interface WbAppointment extends WbResource {
-  WbResourceType: "WbAppointment",
+  wbResourceType: "WbAppointment",
   status: 'proposed' | 'pending' | 'booked' | 'arrived' | 'fulfilled' | 'cancelled' | 'noshow' | 'entered-in-error' | 'checked-in' | 'waitlist'
   // "cancelationReason" : { CodeableConcept }, // The coded reason for the appointment being cancelled
   // "serviceCategory" : [{ CodeableConcept }], // A broad categorization of the service that is to be performed during this appointment
