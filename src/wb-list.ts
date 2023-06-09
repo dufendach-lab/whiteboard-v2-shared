@@ -2,6 +2,7 @@ import {WbResource} from "./wb-resource";
 import {CodeableConcept, Extension} from "fhir/r4";
 
 export interface WbListEntry { // C? Entries in the list
+  id?: string,
   flag: CodeableConcept, // Status/Workflow information about this item
   date: string, // When item added to list
   item: string // R!  Actual entry
