@@ -7,8 +7,8 @@ export interface WbCareTeam extends WbResource {
   // "status" : "<code>", // proposed | active | suspended | inactive | entered-in-error
   // "category" : [{ CodeableConcept }], // Type of team
   name: string, // Name of the team, such as crisis assessment team
-  subject: string, // Who care team is for
-  encounter: string, // Encounter created as part of
+  subject?: string, // Who care team is for
+  encounter?: string, // Encounter created as part of
   // "period" : { Period }, // Time period team covers
   participant: { // C? Members of the team
     role?: CodeableConcept[], // Type of involvement
