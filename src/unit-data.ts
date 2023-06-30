@@ -10,7 +10,12 @@ export interface ServiceTeam {
   id?: string,
   identifier: string,
   name: string,
-  color: string
+  color: string,
+  practitioners: {
+    identifier: string,
+    label: string,
+    priority: number
+  }
 }
 
 export interface UnitData {
