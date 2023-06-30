@@ -8,7 +8,5 @@ export interface WbPatient extends WbResource {
   name: HumanName,
   gender?: ('male' | 'female' | 'other' | 'unknown'),
   birthDate?: string,
-  activeFlags: WbFlag[],
-  activeProcedures: WbProcedure[],
   extension?: Extension[]
 }
