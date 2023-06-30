@@ -15,7 +15,7 @@ export interface ServiceTeam {
     identifier: string,
     label: string,
     priority: number
-  }
+  }[]
 }
 
 export interface UnitData {
