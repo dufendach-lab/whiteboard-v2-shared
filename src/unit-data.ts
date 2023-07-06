@@ -15,7 +15,6 @@ export interface ServiceTeam {
     id: string,
     identifier: string,
     label: string,
-    priority: number
   }[]
 }
 
