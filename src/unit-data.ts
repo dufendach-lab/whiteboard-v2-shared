@@ -22,10 +22,14 @@ export interface UnitData {
   name: string,
   identifier: string,
   locations: {
+    id: string,
     identifier: string,
     name: string
   }[],
-  lists: string[],
+  lists: {
+    identifier: string,
+    id: string
+  }[],
   serviceTeams: ServiceTeam[],
   id?: string
 }
