@@ -26,10 +26,15 @@ export interface UnitData {
     identifier: string,
     name: string
   }[],
+  externalLocations: {
+    id: string,
+    identifier: string,
+    name: string
+  }[],
   lists: {
     identifier: string,
     id: string
   }[],
   serviceTeams: ServiceTeam[],
-  id?: string
+  id: string
 }
