@@ -36,5 +36,5 @@ export interface UnitData {
     id: string
   }[],
   serviceTeams: ServiceTeam[],
-  id?: string
+  id: string
 }
