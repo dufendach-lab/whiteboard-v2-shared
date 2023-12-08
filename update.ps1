@@ -5,13 +5,13 @@ git push
 
 #
 #npx tsc
-#cd ../frontend
-#yarn upgrade wb-shared-models
-#Write-Host "Frontend updated successfully"
-#
+cd ../unit-conductor/frontend
+yarn upgrade wb-shared-models
+Write-Host "Frontend updated successfully"
+
 #cd ../api
 #yarn upgrade wb-shared-models
 #Write-Host "API updated successfully"
-#
-#cd ../shared
-#Write-Host "Congrats, your script executed successfully"
+
+cd ../../unit-conductor-shared
+Write-Host "Congrats, your script executed successfully"
