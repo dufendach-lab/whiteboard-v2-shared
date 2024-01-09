@@ -2,7 +2,7 @@ import {WbResource} from "./wb-resource";
 import {CodeableConcept, Period} from "fhir/r4";
 
 // TODO: Add more colors as needed
-export type TeamColor = 'red' | 'blue' | 'yellow' | 'orange' | 'silver' | 'green'
+export type TeamColor = 'unassigned' | 'red' | 'blue' | 'yellow' | 'orange' | 'silver' | 'green'
 export interface WbCareTeam extends WbResource {
   wbResourceType: "WbCareTeam",
   identifier: string, // Mandatory // External Ids for this item
