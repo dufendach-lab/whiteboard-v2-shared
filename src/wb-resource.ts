@@ -1,5 +1,5 @@
 export type WbResourceType = 'WbPatient' | 'WbEncounter' | 'WbLocation' | 'WbList' | 'WbProcedure' | 'WbFlag'
-  | 'WbOrganization' | 'WbCareTeam' | 'WbPractitioner' | 'WbAppointment'
+  | 'WbOrganization' | 'WbCareTeam' | 'WbPractitioner' | 'WbAppointment' | 'WbCondition' | 'WbObservation' | 'WbBundle'
 
 export interface WbResource {
   wbResourceType: WbResourceType,
