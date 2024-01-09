@@ -1,5 +1,6 @@
 $ErrorActionPreference = "Stop"
 
+git pull
 npm version patch
 git push
 
