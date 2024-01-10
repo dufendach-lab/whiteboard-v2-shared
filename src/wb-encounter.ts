@@ -1,5 +1,6 @@
 import {EncounterDiagnosis, EncounterHospitalization, Period} from "fhir/r4";
 import {WbResource} from "./wb-resource";
+import { WbLocation } from "./wb-location";
 
 export interface WbEncounter extends WbResource {
   wbResourceType: "WbEncounter"
@@ -9,8 +10,8 @@ export interface WbEncounter extends WbResource {
   hospitalization: EncounterHospitalization;
   // isPendingDischarge?: boolean;
   subjectReference: string;
-  currentLocation?: string;
-  futureLocation?: string;
+  currentLocation?: WbLocation;
+  futureLocation?: WbLocation;
 
   // Compiled data
   careTeam?: string;
