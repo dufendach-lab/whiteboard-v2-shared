@@ -9,5 +9,7 @@ export * from "./wb-care-team";
 export * from "./wb-practitioner";
 export * from "./wb-flag";
 export * from "./wb-procedure";
+export * from "./wb-fellow-team";
+export * from "./wb-np-team";
 
 export * from "./constants/constants";
