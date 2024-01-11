@@ -26,6 +26,6 @@ export interface WbCareTeam extends WbResource {
   // "telecom" : [{ ContactPoint }], // A contact detail for the care team (that applies to all members)
   // "note" : string // [{ Annotation }] // Comments made about the CareTeam
   teamColor: TeamColor,
-  fellowTeam: WbFellowTeam,
-  npTeam: WbNPTeam
+  fellowTeam?: WbFellowTeam,
+  npTeam?: WbNPTeam
 }
