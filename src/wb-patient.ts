@@ -21,8 +21,6 @@ export interface WbPatient extends WbResource {
   bedsideRN: string | null,
   transferOfInterest: boolean,
   adultPatient: boolean,
-  fellowTeam: WbFellowTeam | null,
-  npTeam: WbNPTeam | null
   clinicalData: {
     diagnosis: string | null,
     isDialysis: boolean,

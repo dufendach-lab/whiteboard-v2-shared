@@ -1,3 +1,5 @@
+import { WbFellowTeam } from "./wb-fellow-team";
+import { WbNPTeam } from "./wb-np-team";
 import {WbResource} from "./wb-resource";
 import {CodeableConcept, Period} from "fhir/r4";
 
@@ -23,5 +25,7 @@ export interface WbCareTeam extends WbResource {
   // "managingOrganization" : [{ Reference(Organization) }], // Organization responsible for the care team
   // "telecom" : [{ ContactPoint }], // A contact detail for the care team (that applies to all members)
   // "note" : string // [{ Annotation }] // Comments made about the CareTeam
-  teamColor: TeamColor
+  teamColor: TeamColor,
+  fellowTeam: WbFellowTeam,
+  npTeam: WbNPTeam
 }
