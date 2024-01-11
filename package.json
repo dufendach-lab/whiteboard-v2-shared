@@ -1,6 +1,6 @@
 {
   "name": "@kevindufendach/wb-shared-models",
-  "version": "1.0.63",
+  "version": "1.0.64",
   "description": "Shared models for the Whiteboard Application",
   "main": "lib/index.js",
   "scripts": {
