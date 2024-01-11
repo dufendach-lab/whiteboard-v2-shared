@@ -16,6 +16,7 @@ export type ChargeId =
 export interface WbChargeAssignment extends WbResource {
   wbResourceType: "WbChargeAssignment",
   chargeId: ChargeId,
+  name: string,
   charge: string,
   phone: string,
   order: number

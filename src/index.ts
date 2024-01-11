@@ -11,5 +11,6 @@ export * from "./wb-flag";
 export * from "./wb-procedure";
 export * from "./wb-fellow-team";
 export * from "./wb-np-team";
+export * from "./wb-charge-assignment";
 
 export * from "./constants/constants";
