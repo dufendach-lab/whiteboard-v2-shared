@@ -1,4 +1,3 @@
-import { WbNPTeam } from "./wb-np-team";
 import {WbResource} from "./wb-resource";
 import {CodeableConcept, Period} from "fhir/r4";
 
