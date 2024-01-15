@@ -1,10 +1,7 @@
-import { WbFellowTeam } from "./wb-fellow-team";
 import { WbNPTeam } from "./wb-np-team";
 import {WbResource} from "./wb-resource";
 import {CodeableConcept, Period} from "fhir/r4";
 
-// TODO: Add more colors as needed
-export type TeamColor = 'unassigned' | 'red' | 'blue' | 'yellow' | 'orange' | 'silver' | 'green'
 export interface WbCareTeam extends WbResource {
   wbResourceType: "WbCareTeam",
   identifier: string, // Mandatory // External Ids for this item
@@ -25,7 +22,4 @@ export interface WbCareTeam extends WbResource {
   // "managingOrganization" : [{ Reference(Organization) }], // Organization responsible for the care team
   // "telecom" : [{ ContactPoint }], // A contact detail for the care team (that applies to all members)
   // "note" : string // [{ Annotation }] // Comments made about the CareTeam
-  teamColor: TeamColor,
-  fellowTeam?: WbFellowTeam,
-  npTeam?: WbNPTeam
 }
