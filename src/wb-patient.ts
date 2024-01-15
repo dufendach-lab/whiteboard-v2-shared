@@ -7,11 +7,11 @@ import {WbFlag} from "./wb-flag";
  */
 export interface WbPatient extends WbResource {
   wbResourceType: "WbPatient"
+  identifier: string
   name: HumanName
   gender?: ('male' | 'female' | 'other' | 'unknown')
   birthDate?: Date
   flags: WbFlag[]
-  identifier: string
 
   // isNameAlert: boolean,
   // isUpcomingDischarge: boolean,
