@@ -8,6 +8,6 @@ export interface WbProcedure extends WbResource {
   coding: Coding[],
   flags: WbFlag[],
   status: "unknown" | "in-progress" | "preparation" | "not-done" | "on-hold" | "stopped" | "completed" | "entered-in-error",
-  patient: WbPatient
+  patient: WbPatient | null
 }
 
