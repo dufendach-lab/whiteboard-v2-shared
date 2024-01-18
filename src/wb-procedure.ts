@@ -5,6 +5,7 @@ import { WbPatient } from "./wb-patient";
 
 export interface WbProcedure extends WbResource {
   wbResourceType: "WbProcedure",
+  identifier: string,
   coding: Coding[],
   flags: WbFlag[],
   status: "unknown" | "in-progress" | "preparation" | "not-done" | "on-hold" | "stopped" | "completed" | "entered-in-error",
