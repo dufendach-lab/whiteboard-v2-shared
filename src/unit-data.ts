@@ -7,12 +7,10 @@ export const OrganizationalTeamCode: Coding = {
 }
 
 export interface ServiceTeam {
-  id: string,
   identifier: string,
   name: string,
   color: string,
   practitioners: {
-    id: string,
     identifier: string,
     label: string,
   }[]
