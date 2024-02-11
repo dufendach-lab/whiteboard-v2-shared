@@ -12,6 +12,7 @@ export interface WbPatient extends WbResource {
   gender?: ('male' | 'female' | 'other' | 'unknown')
   birthDate?: Date
   flags: WbFlag[]
+  unitSpecificData?: Object
 
   // isNameAlert: boolean,
   // isUpcomingDischarge: boolean,
