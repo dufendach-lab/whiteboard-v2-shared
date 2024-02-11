@@ -7,6 +7,7 @@ export interface WbLocation extends WbResource {
     identifier: string,
     status: ('active'|'planned'|'reserved'|'completed'),
     operationalStatus?: 'closed' | 'housekeeping' | 'occupied' | 'unoccupied' | 'contaminated' | 'isolated',
+    operationalStatusText?: string,
     partOf?: string, // ID of another location this is physically a part of
     type?: string[],
     physical?: string[],
