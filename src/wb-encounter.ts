@@ -15,3 +15,8 @@ export interface WbEncounter extends WbResource {
   // Compiled data
   careTeam?: string;
 }
+
+/** it might be beneficial to keep track of the "currentLocation" and "pendingLocations" as two specific
+ *  fields on the WbEncounter object so that it's easier to query them. Obviously, they would need to stay
+ *  in sync with the locations array, but it might speed things up a bit.
+ **/
