@@ -25,4 +25,5 @@ export interface WbResource {
   version: number
   identifier?: string
   extension?: Extension[]
+  data?: {[key in string]: any}
 }
