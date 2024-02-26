@@ -10,7 +10,14 @@ export interface WbEncounter extends WbResource {
   hospitalization: EncounterHospitalization;
   // isPendingDischarge?: boolean;
   subjectReference: string;
+  // activeLocation: string; // ID of the currently active location
+  // pendingLocations: string[]; // Ids of pending/future locations
   locations: WbLocation[];
+  // locations: {
+  //   locationReference: string,
+  //   status: 'planned' | 'active' | 'reserved' | 'completed',
+  //   period: Period
+  // }[]
 
   // Compiled data
   careTeam?: string;
